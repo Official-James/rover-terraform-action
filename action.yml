@@ -1,0 +1,6 @@
+name: rover-action
+description: Run rover standalone to output results.
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
