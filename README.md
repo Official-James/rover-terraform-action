@@ -22,7 +22,7 @@ You will need to set enviornment variables so when Terraform initialises, it can
 
 ```yml
 - name: rover
-  uses: Official-James/rover-terraform-aciton@main
+  uses: Official-James/rover-terraform-action@main
   env:
     ARM_CLIENT_ID: ***
     ARM_CLIENT_SECRET: ***
