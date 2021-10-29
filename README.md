@@ -15,14 +15,14 @@ The you will need to specify the rover action:
 
 ```yml
 - name: rover
-  uses: Official-James/rover@main
+  uses: Official-James/rover-terraform-action@main
 ```
 
-You will need to set enviornment variables so when Terraform initilises, it can access the backend and any variables specified. You can achieve this by doing the following:
+You will need to set enviornment variables so when Terraform initialises, it can access the backend and any variables specified. You can achieve this by doing the following:
 
 ```yml
 - name: rover
-  uses: Official-James/rover@main
+  uses: Official-James/rover-terraform-aciton@main
   env:
     ARM_CLIENT_ID: ***
     ARM_CLIENT_SECRET: ***
