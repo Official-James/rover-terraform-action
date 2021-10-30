@@ -1,4 +1,4 @@
-name: rover-action
+name: Rover Terraform Action
 description: Run rover standalone to output results.
 branding:
   icon: map
