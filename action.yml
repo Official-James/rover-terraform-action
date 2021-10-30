@@ -1,7 +1,8 @@
 name: rover-action
 description: Run rover standalone to output results.
-icon: map
-color: black
+branding:
+  icon: map
+  color: black
 
 runs:
   using: "docker"
