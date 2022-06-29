@@ -1,3 +1,8 @@
 #!/bin/bash
 
-rover -standalone true
+if [ -z "$PLANPATH" ]
+then
+    rover -standalone true
+else
+    rover -standalone true -planPath $PLANPATH
+fi
