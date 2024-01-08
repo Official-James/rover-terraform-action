@@ -8,7 +8,7 @@ You will need to create a workflow to checkout your repo:
 
 ```yml
 - name: Checkout
-  uses: actions/checkout@v2
+  uses: actions/checkout@v4
 ```
 
 The you will need to specify the rover action:
@@ -40,6 +40,17 @@ The final step in the workflow will be the artifacting of the standalone files. 
   with:
     name: rover
     path: "./rover.zip"
+```
+
+Or the generated image:
+
+```yml
+- name: Upload rover image
+  uses: edunad/actions-image@v2.0.0
+  with:
+    path: './rover.svg'
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    title: 'Rover Visualization'
 ```
 
 Once you run the workflow, the actions will upload the artifacts and make them available within the run.
